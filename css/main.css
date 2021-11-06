@@ -1,17 +1,7 @@
+/* Toda la página */
 *{
     font-family: 'Indie Flower', cursive;
 }
-
-/* Header */
-.header{
-    /* background-image: url(../Img/Imagen_Prueba.png); */
-    /* background-position: center;
-    background-size: cover; */
-} 
-
-/* .espacioNavegadorDescripcion{
-    height: 65vmin;
-} */
 
 /* Habilidades */
 .card-img-filter{
@@ -19,7 +9,6 @@
 }
 
 /* Proyectos */
-
 .media-object-img{
     --tamano: 65px;
     width: var(--tamano);

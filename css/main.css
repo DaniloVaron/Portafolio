@@ -1,17 +1,18 @@
 /* Toda la página */
-*{
-    font-family: 'Indie Flower', cursive;
+* {
+  font-family: "Indie Flower", cursive;
 }
 
 /* Habilidades */
-.card-img-filter{
-    filter: brightness(0.5);
+.card-img-filter {
+  filter: brightness(0.5);
+  --tamano: 400px;
+  height: var(--tamano);
 }
 
 /* Proyectos */
-.media-object-img{
-    --tamano: 65px;
-    width: var(--tamano);
-    height: var(--tamano);
-    
-} 
+.media-object-img {
+  --tamano: 65px;
+  width: var(--tamano);
+  height: var(--tamano);
+}

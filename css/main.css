@@ -5,8 +5,8 @@
 
 /* Habilidades */
 .card-img-filter {
-  filter: brightness(0.5);
-  --tamano: 400px;
+  filter: brightness(0.7);
+  --tamano: 350px;
   height: var(--tamano);
 }
 

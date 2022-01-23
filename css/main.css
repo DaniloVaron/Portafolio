@@ -3,16 +3,58 @@
   font-family: "Nunito", sans-serif;
 }
 
-/* Habilidades */
-.card-img-filter {
-  filter: brightness(0.7);
-  --tamano: 350px;
-  height: var(--tamano);
+.modo_claro {
+  --tema: hsl(0, 0%, 100%);
+  --color_icono: hsla(0, 0%, 0%, 0.54);
+  --color_cabecera: hsl(227, 47%, 96%);
+  --letra: hsl(230, 17%, 14%);
+}
+
+.modo_oscuro {
+  --tema: hsl(230, 17%, 14%);
+  --color_icono: rgba(255, 255, 255, 1);
+  --color_cabecera: hsl(232, 19%, 15%);
+  --letra: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--tema);
+  color: var(--letra);
+}
+
+.fas,
+.fab {
+  color: var(--color_icono);
+}
+
+.up_down {
+  background-color: var(--color_cabecera);
+}
+
+.material-icons {
+  cursor: pointer;
+  color: var(--color_icono);
+  font-size: 1.1rem;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.icono_dimension {
+  font-size: 3.5rem;
 }
 
 /* Proyectos */
 .media-object-img {
   --tamano: 65px;
   width: var(--tamano);
+  height: var(--tamano);
+}
+
+/* Habilidades */
+.card-img-filter {
+  filter: brightness(0.7);
+  --tamano: 350px;
   height: var(--tamano);
 }

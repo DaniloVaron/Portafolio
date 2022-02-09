@@ -8,6 +8,8 @@
   --color_icono: hsla(0, 0%, 0%, 0.54);
   --color_cabecera: hsl(227, 47%, 96%);
   --letra: hsl(230, 17%, 14%);
+  --scroll: rgb(244, 244, 244);
+  --barra: rgb(100, 100, 100);
 }
 
 .modo_oscuro {
@@ -15,11 +17,25 @@
   --color_icono: rgba(255, 255, 255, 1);
   --color_cabecera: hsl(232, 19%, 15%);
   --letra: hsl(0, 0%, 100%);
+  --scroll: hsl(230, 17%, 14%);
+  --barra: rgb(255, 255, 255, 0.5);
 }
 
 body {
   background-color: var(--tema);
   color: var(--letra);
+  padding-top: 100px;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+  background-color: var(--scroll);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--barra);
+  border-radius: 0.7rem;
+  border: 0.3rem solid var(--scroll);
 }
 
 .fas,
@@ -29,6 +45,13 @@ body {
 
 .up_down {
   background-color: var(--color_cabecera);
+}
+
+nav {
+  background-color: var(--color_cabecera);
+  margin: 0;
+  margin-top: -100px;
+  z-index: 100;
 }
 
 .material-icons {
@@ -55,6 +78,10 @@ body {
 /* Habilidades */
 .card-img-filter {
   filter: brightness(0.7);
-  --tamano: 350px;
-  height: var(--tamano);
+  --alto: 300px;
+  height: var(--alto);
+}
+
+.card {
+  background-color: var(--tema);
 }

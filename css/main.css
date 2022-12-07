@@ -85,3 +85,7 @@ nav {
 .card {
   background-color: var(--tema);
 }
+
+.modal-color {
+  background-color: var(--tema);
+}
